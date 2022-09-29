@@ -1,6 +1,6 @@
 import random
 
-def CreaAgenda(nombreFichero, n):
+def creaAgenda(nombreFichero, n):
     lista_nombres = ['Antonio', 'Alfonso', 'Eugenio', 'Evaristo', 'Pablo', 'Alberto', 'Alejandro', 'Laura', 'Estela', 'Rosa']
     lista_apellidos = ['Martínez', 'Morales', 'Marín', 'López', 'García', 'Zapata', 'Gómez', 'Ruíz', 'Sánchez', 'Chicote']
     archivo = open(nombreFichero+'.csv', 'w', encoding='utf8')
