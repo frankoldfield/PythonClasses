@@ -12,5 +12,5 @@ def creaAgenda(nombreFichero, n):
         entrada += lista_apellidos[random.randint(0, 9)]
         entrada += ';'+str(random.randint(ini,fin)) #Importante hacer el casting, si no no puede concatenar con el +=
         archivo.write('<'+entrada+'>\n') #Normálmente se pueden concatenar Strings con la coma, pero como .write es una función
-CreaAgenda('Prueba', 7)                #que toma parámetros, la , se toma como una separación de parámetros, asi que tenemos que concatenarlos con el +
+creaAgenda('Prueba', 7)                #que toma parámetros, la , se toma como una separación de parámetros, asi que tenemos que concatenarlos con el +
 #Puede ser que la función que crea un string tome varios parámetros separados con la , y los concatena, y en realidad eso es lo que está pasando cuando concatenamos con las comas?
