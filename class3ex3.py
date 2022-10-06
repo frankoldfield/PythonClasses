@@ -13,12 +13,12 @@ def agendaContactos():
     print('Escriba 2 para salir del programa')
     opcion = int(input()) #Lo pasamos a int para que no haya problemas con los operadores lógicos
     if opcion == 1:
-        nombre = input('Dígame la persona cuyo número quiere saber')
+        nombre = input('Dígame la persona cuyo número quiere saber').lower() #Se tiene que pasar a minúscula para la búsqueda
         lista = list(diccionario) #Pasamos el diccionario a una lista para poder hacer una búsqueda sobre todas las entradas de forma ordenada
         encontrado = False #En un principio no se ha encontrado
         i=0
         while encontrado==False and i <= len(lista)-1:#Mientras que no se encuentre y no nos pasemos de largo se sigue buscando
-            if lista[i].find(nombre) != -1: #Recorremos toda la lista y buscamos la cadena en cada uno de los string de cada posición de la lista
+            if (lista[i].lower()).find(nombre) != -1: #Recorremos toda la lista y buscamos la cadena en cada uno de los string de cada posición de la lista
                 posicion = i #Guardamos la posición en la que estaba
                 encontrado = True
             i += 1
